@@ -22,11 +22,6 @@ const footerLinks = {
     { name: "Careers", href: "mailto:gerencia@topadvertisinginternational.com?subject=Careers%20at%20TAI", badge: "Hiring" },
     { name: "Contact", href: "#contact" },
   ],
-  Legal: [
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms of Service", href: "#" },
-    { name: "Cookie Policy", href: "#" },
-  ],
 };
 
 const socialLinks = [
@@ -45,10 +40,10 @@ export function FooterSection() {
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Main Footer */}
         <div className="py-16 lg:py-24">
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-12 lg:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-12 lg:gap-8">
             {/* Brand Column */}
             <div className="col-span-2">
-              <a href="#" className="inline-flex items-center gap-3 mb-6">
+              <a href="/" className="inline-flex items-center gap-3 mb-6">
                 <img src="/images/tai-logo-icon.png" alt="TAI Logo" className="h-12" />
                 <span className="text-2xl font-display text-primary">TAI</span>
               </a>
@@ -101,15 +96,8 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-8 border-t border-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            2026 Top Advertising International. All rights reserved.
+            © {new Date().getFullYear()} Top Advertising International. All rights reserved.
           </p>
-
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-green-500" />
-              All systems operational
-            </span>
-          </div>
         </div>
       </div>
     </footer>

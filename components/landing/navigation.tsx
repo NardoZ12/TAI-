@@ -45,7 +45,7 @@ export function Navigation() {
           }`}
         >
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
+          <a href="/" className="flex items-center gap-3 group">
             <img 
               src="/images/tai-logo-icon.png" 
               alt="TAI Logo" 
