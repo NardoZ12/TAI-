@@ -214,17 +214,6 @@ export function DevelopersSection() {
                 </pre>
               </div>
             </div>
-            
-            {/* Links */}
-            <div className="mt-6 flex items-center gap-6 text-sm">
-              <a href="#" className="text-primary hover:underline underline-offset-4">
-                View All Case Studies
-              </a>
-              <span className="text-foreground/20">|</span>
-              <a href="#" className="text-muted-foreground hover:text-foreground">
-                Download Portfolio
-              </a>
-            </div>
           </div>
         </div>
       </div>

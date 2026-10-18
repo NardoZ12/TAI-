@@ -3,12 +3,12 @@
 import { useEffect, useState, useRef } from "react";
 
 const locations = [
-  { city: "New York", region: "North America", latency: "98% reach" },
-  { city: "London", region: "Europe", latency: "92% reach" },
-  { city: "Dubai", region: "Middle East", latency: "87% reach" },
-  { city: "São Paulo", region: "Latin America", latency: "94% reach" },
-  { city: "Singapore", region: "Asia Pacific", latency: "91% reach" },
-  { city: "Sydney", region: "Oceania", latency: "89% reach" },
+  { city: "New York", region: "North America" },
+  { city: "London", region: "Europe" },
+  { city: "Dubai", region: "Middle East" },
+  { city: "São Paulo", region: "Latin America" },
+  { city: "Singapore", region: "Asia Pacific" },
+  { city: "Sydney", region: "Oceania" },
 ];
 
 export function InfrastructureSection() {
@@ -54,25 +54,9 @@ Global Campaign Reach
               <br />
               design.
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed mb-12">
+            <p className="text-xl text-muted-foreground leading-relaxed">
               Our international team builds campaigns that travel across borders while staying relevant to local audiences. From strategy to execution, your brand stays consistent everywhere.
             </p>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-8">
-              <div>
-                <div className="text-4xl lg:text-5xl font-display mb-2">17</div>
-                <div className="text-sm text-muted-foreground">Data centers</div>
-              </div>
-              <div>
-                <div className="text-4xl lg:text-5xl font-display mb-2">99.99%</div>
-                <div className="text-sm text-muted-foreground">Uptime SLA</div>
-              </div>
-              <div>
-                <div className="text-4xl lg:text-5xl font-display mb-2">&lt;50ms</div>
-                <div className="text-sm text-muted-foreground">Global latency</div>
-              </div>
-            </div>
           </div>
 
           {/* Right: Location list */}
@@ -84,11 +68,7 @@ Global Campaign Reach
             <div className="border border-foreground/10">
               {/* Header */}
               <div className="px-6 py-4 border-b border-foreground/10 flex items-center justify-between">
-                <span className="text-sm font-mono text-muted-foreground">Edge Network</span>
-                <span className="flex items-center gap-2 text-xs font-mono text-green-600">
-                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                  All operational
-                </span>
+                <span className="text-sm font-mono text-muted-foreground">Markets we reach</span>
               </div>
 
               {/* Locations */}
@@ -111,7 +91,6 @@ Global Campaign Reach
                         <div className="text-sm text-muted-foreground">{location.region}</div>
                       </div>
                     </div>
-                    <span className="font-mono text-sm text-muted-foreground">{location.latency}</span>
                   </div>
                 ))}
               </div>

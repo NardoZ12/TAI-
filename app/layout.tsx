@@ -23,7 +23,6 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Top Advertising International - Digital Marketing Agency',
   description: 'TAI is a leading digital marketing agency helping brands grow through strategic advertising, creative campaigns, and data-driven marketing solutions.',
-  generator: 'v0.app',
 }
 
 export default function RootLayout({

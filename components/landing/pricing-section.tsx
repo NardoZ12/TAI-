@@ -173,10 +173,7 @@ export function PricingSection() {
 
         {/* Bottom Note */}
         <p className="mt-12 text-center text-sm text-muted-foreground">
-          All plans include brand strategy consultation, performance tracking, and monthly reporting.{" "}
-          <a href="#" className="underline underline-offset-4 hover:text-primary transition-colors">
-            Compare all features
-          </a>
+          All plans include brand strategy consultation, performance tracking, and monthly reporting.
         </p>
       </div>
     </section>
